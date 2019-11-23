@@ -52,6 +52,7 @@ void readLines(fstream *file, int& numOfPpl, string line, string *phoneArray) {
 	cout << endl;
 } 
 
+
 //Function that will ask for the user input
 void requestUserInput(string& userInput) {
 	cout << "Please enter the name or partial number you wish to search! ";
