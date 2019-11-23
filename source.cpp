@@ -7,16 +7,16 @@ using namespace std;
 
 //function prototypes
 void readLines(fstream *file, int&, string, string *);
-void searchArray(string, string *, int);
+void searchArray(string, string *, int, string, string);
 void requestUserInput(string&);
 
 //main Function
 int main() {
 	//declaring all variables 
 	fstream file;
-	file.open("phonenumbers.txt");
+	file.open("hotel_confirm_system.txt");
 	int numOfPpl = 0;
-	const int size = 20;
+	const int size = 50;
 	string line;
 	string *phoneArray = new string[size];
 	string userInput;
@@ -24,9 +24,9 @@ int main() {
 	//Calling functions
 	readLines(&file, numOfPpl, line, phoneArray);
 	requestUserInput(userInput);
-	searchArray(userInput, phoneArray, size);
+	searchArray(userInput, phoneArray, size, hotelroom, reservationtime);
 
-	cout << "The number of people in this list  is: " << numOfPpl << endl;
+	cout << "The number of people in this hotel confirm list  is: " << numOfPpl << endl;
 	cout << endl;
 
 
@@ -62,7 +62,7 @@ void requestUserInput(string& userInput) {
 
 //Function that will check the user input to the array and tell us if there
 //are any matches and display them to the console
-void searchArray(string userInput, string *phoneArray, int size) {
+void searchArray(string userInput, string *phoneArray, int size, string hotelroom,string reservationtime) {
 	bool match = false;
 	cout << "Here are the results that were found!" << endl;
 	for (int i = 0; i < size; i++) {
