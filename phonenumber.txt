@@ -1,20 +1,20 @@
-Murray Jones, 555-1212
-Christal Delamater, 555-4587
-Zetta Smith, 555-6358
-Elia Roy, 555-5841
-Delmer Bibb, 555-7444
-Smith Nevers, 555-7855
-Roselle Gose, 555-3211
-Jonathan Basnett, 555-5422
-Marcel Earwood, 555-4112
-Marina Newton, 555-1212
-Magdalen Stephan, 555-3255
-Deane Newton, 555-6988
-Mariana Smith, 555-7855
-Darby Froman, 555-2222
-Shonda Kyzer, 555-3333
-Jones Netto, 555-1477
-Bibone Magnani, 555-4521
-Laurena Stiverson, 555-7811
-Elouise Muir, 555-9633
-Rene Bibb, 555-3255
+Murray Jones, 555-1212, A001, AM08:00
+Christal Delamater, 555-4587, C007, PM20:00
+Zetta Smith, 555-6358, D002, AM07:00
+Elia Roy, 555-5841, A003, PM13:00
+Delmer Bibb, 555-7444, B006, PM14:00
+Smith Nevers, 555-7855, C010, PM16:00
+Roselle Gose, 555-3211, D001, AM10:00
+Jonathan Basnett, 555-5422, A002, PM15:00
+Marcel Earwood, 555-4112,C002, PM14:00
+Marina Newton, 555-1212, C009, AM11:00
+Magdalen Stephan, 555-3255, A004, AM14:00
+Deane Newton, 555-6988, B007, PM22:00
+Mariana Smith, 555-7855, F010, PM13:00
+Darby Froman, 555-2222, D004, PM14:00
+Shonda Kyzer, 555-3333, D009, AM08:00
+Jones Netto, 555-1477, F001, PM15:00
+Bibone Magnani, 555-4521, F005, PM 19:00
+Laurena Stiverson, 555-7811, E101,AM10:00
+Elouise Muir, 555-9633, E020, AM11:00
+Rene Bibb, 555-3255, F011, PM 17:00
