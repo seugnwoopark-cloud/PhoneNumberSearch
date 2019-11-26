@@ -52,9 +52,9 @@ void readLines(fstream *file, int& numOfPpl, string line, string *phoneArray) {
 	cout << "Here is the list of everyone in the Hotel-confirm sysytem!" << endl;
 	cout << endl;
 	for (int i = 0; i < 20; i++) {
-		cout << "|" <<end1;
+		cout << "|" <<endl;
 		cout << phoneArray[i] << endl;
-		cout << "|" <<end1;
+		cout << "|" <<endl;
 	}
 	cout << endl;
 	cout << endl;
@@ -63,10 +63,10 @@ void readLines(fstream *file, int& numOfPpl, string line, string *phoneArray) {
 void ChoosetwoWay(String& want){
  cout << "Please enter the 'search' or 'delete' on customer list!" 
 	 cin >> want;
-	cout<< end1;
+	cout<< endl;
 }
 
-if ( want='search'){
+if ( want="search"){
 //Function that will ask for the user input
 void requestUserInput(string& userInput) {
 	cout << "Please enter the name or partial number you wish to search! ";
@@ -74,11 +74,11 @@ void requestUserInput(string& userInput) {
 	cout << endl;
 }
 }
-else if ( want='delete'){
+else if ( want="delete"){
 void deleteUser(String& deleteInput){
 	cout << "Please enter the name or partial number you with to deletle!:";
 	cin >> delteInput;
-	cout<< end1;
+	cout<< endl;
 }
 	
 }
