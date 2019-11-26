@@ -10,7 +10,7 @@ void readLines(fstream *file, int&, string, string *);
 void searchArray(string, string *, int, string, string);
 void requestUserInput(string&);
 void deleteUser(string&);
-void ChoosetwoWay(String& );
+void ChoosetwoWay(string&);
 
 //main Function
 int main() {
@@ -22,22 +22,28 @@ int main() {
 	string line;
 	string *phoneArray = new string[size];
 	string userInput;
-
+	string want;
+	string deleteInput;
+	string hotelroom;
+	string reservationtime;
 	//Calling functions
+
 	readLines(&file, numOfPpl, line, phoneArray);
-	ChoosetwoWay(want)
+	
+		ChoosetwoWay(want);
+	
 	requestUserInput(userInput);
-	deleteUser(delteInput);
-	
+	deleteUser(deleteInput);
+
 	searchArray(userInput, phoneArray, size, hotelroom, reservationtime);
-	
-	
+
+
 	cout << "The number of people in this hotel confirm list  is: " << numOfPpl << endl;
 	cout << endl;
 
 
 	system("pause");
-	
+
 }
 
 //Function that will read the entire file and display the numbers to the console
@@ -52,39 +58,40 @@ void readLines(fstream *file, int& numOfPpl, string line, string *phoneArray) {
 	cout << "Here is the list of everyone in the Hotel-confirm sysytem!" << endl;
 	cout << endl;
 	for (int i = 0; i < 20; i++) {
-		cout << "|" <<endl;
+		cout << "|" << endl;
 		cout << phoneArray[i] << endl;
-		cout << "|" <<endl;
+		cout << "|" << endl;
 	}
 	cout << endl;
 	cout << endl;
-} 
-
-void ChoosetwoWay(String& want){
- cout << "Please enter the 'search' or 'delete' on customer list!" 
-	 cin >> want;
-	cout<< endl;
 }
 
-if ( want="search"){
-//Function that will ask for the user input
-void requestUserInput(string& userInput) {
-	cout << "Please enter the name or partial number you wish to search! ";
-	cin >> userInput;
+void ChoosetwoWay(string& want){
+	cout << "Please enter the 'search' or 'delete' on customer list!";
+		cin >> want;
 	cout << endl;
-}
-}
-else if ( want="delete"){
-void deleteUser(String& deleteInput){
-	cout << "Please enter the name or partial number you with to deletle!:";
-	cin >> delteInput;
-	cout<< endl;
-}
 	
 }
+
+ 
+	//Function that will ask for the user input
+	void requestUserInput(string& userInput){
+		cout << "Please enter the name or partial number you wish to search! ";
+		cin >> userInput;
+		cout << endl;
+	}
+
+
+	void deleteUser(string& deleteInput){
+		cout << "Please enter the name or partial number you with to deletle!:";
+		cin >> deleteInput;
+		cout << endl;
+	}
+
+
 //Function that will check the user input to the array and tell us if there
 //are any matches and display them to the console
-void searchArray(string userInput, string *phoneArray, int size, string hotelroom,string reservationtime) {
+void searchArray(string userInput, string *phoneArray, int size, string hotelroom, string reservationtime) {
 	bool match = false;
 	cout << "Here are the results that were found!" << endl;
 	for (int i = 0; i < size; i++) {
