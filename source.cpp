@@ -63,7 +63,11 @@ int main() {
 				out << addlist;
 
 			}
+			
+			else if (isEqual(want, deleteinfo)){
+				deleteUser(deleteInput);
 
+			}
 		}
 	}
 	catch (out_of_range& e){
