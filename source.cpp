@@ -29,6 +29,8 @@ int main() {
 	string userInput;
 	string deleteInput;
 	string addInput;
+	string search= "search";
+	string add = "add";
 
 	//Calling functions
 	try{
@@ -45,9 +47,7 @@ int main() {
 			std::cin >> want;
 			cout << endl;
 
-			string search= "search";
-			string add = "add";
-
+			
 			if (isEqual(want, search)){
 				requestUserInput(userInput);
 				searchArray(userInput, phoneArray, size);
