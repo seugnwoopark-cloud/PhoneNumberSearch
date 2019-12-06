@@ -29,9 +29,10 @@ int main() {
 	string userInput;
 	string deleteInput;
 	string addInput;
-	string search= "search";
-	string add = "add";
 
+	string search = "search";
+	string add = "add";
+	string deleteinfo = "delete";
 	//Calling functions
 	try{
 		
@@ -42,12 +43,11 @@ int main() {
 			cout << "The number of people in this list  is: " << numOfPpl << endl;
 			cout << endl;
 
-			std::cout << "Please enter the word search,add on customer list!:";
+			std::cout << "Please enter the word 'search,add' on customer list!:";
 			string want;
 			std::cin >> want;
 			cout << endl;
 
-			
 			if (isEqual(want, search)){
 				requestUserInput(userInput);
 				searchArray(userInput, phoneArray, size);
@@ -63,10 +63,14 @@ int main() {
 				out << addlist;
 
 			}
-			
+
 			else if (isEqual(want, deleteinfo)){
 				deleteUser(deleteInput);
-
+				fstream delfile;
+				delfile.open("hotellist.txt", ios::out);
+				delfile << "list fix & delete" << endl;
+				
+				
 			}
 		}
 	}
@@ -86,7 +90,7 @@ void readLines(fstream *file, int& numOfPpl, string line, string *phoneArray) {
 		phoneArray[numOfPpl] = line;
 		numOfPpl++;
 	}
-	cout << "Here is the list of everyone in the Hotel-confirm sysytem!" << endl;
+	cout << "Here is the list of everyone in the Hotel!" << endl;
 	cout << endl;
 	for (int i = 0; i < 30; i++) {
 		cout << phoneArray[i] << endl;
@@ -106,7 +110,7 @@ void deleteUser(string& deleteInput){
 
 //Function that will ask for the user input
 void requestUserInput(string& userInput) {
-	cout << "Please enter the name or partial number you wish to search! ";
+	cout << "Please enter the name or other info you wish to search! ";
 	cin >> userInput;
 	cout << endl;
 }
@@ -134,5 +138,3 @@ void searchArray(string userInput, string *phoneArray, int size) {
 	}
 
 }
-
-
